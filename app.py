@@ -5,7 +5,7 @@ from azure.identity import DefaultAzureCredential
 
 app = FastAPI()
 
-@app.get("/dbcheck")
+@app.get("/")
 def check_db():
     try:
         # Get server & DB name from environment variables
